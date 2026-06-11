@@ -1,6 +1,12 @@
 import mongoose from "mongoose";
 
 const ConversationSchema = new mongoose.Schema({
+  widgetKey: {
+    type: String,
+    required: true,
+    index: true,
+  },
+  
   messages: [
     {
       role: String,

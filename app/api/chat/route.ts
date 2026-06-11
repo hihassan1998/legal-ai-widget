@@ -5,17 +5,18 @@ import Conversation from "../../models/Conversations";
 export async function POST(req: Request) {
   await connectDB();
 
-  const { message, conversationId } = await req.json();
+  const { message, conversationId, widgetKey } = await req.json();
 
   let convo;
 
   if (conversationId) {
     convo = await Conversation.findById(conversationId);
   }
-
+  // add a widget key and message to the conversation
   if (!convo) {
     convo = await Conversation.create({
       messages: [],
+      widgetKey: widgetKey || "dev_key",
     });
   }
 
