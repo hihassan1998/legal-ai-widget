@@ -33,8 +33,10 @@
 
   // IFRAME (REact app UI)
   const iframe = document.createElement("iframe");
-
-  iframe.src = `http://localhost:3000/widget-frame?key=${widgetKey}`;
+  // FOr local host
+  // iframe.src = `http://localhost:3000/widget-frame?key=${widgetKey}`;
+  // For deployed Demo version
+  iframe.src = `https://legal-ai-widget.vercel.app/widget-frame?key=${widgetKey}`;
 
   Object.assign(iframe.style, {
     position: "fixed",
