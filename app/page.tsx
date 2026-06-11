@@ -1,15 +1,16 @@
-import Link from "next/link";
+import "./testpage.css";
+import WidgetLoader from "./components/WidgetLoader";
 
 export default function Home() {
   return (
-    <main>
+    <main className="main">
       <h1>Legal AI Widget MVP</h1>
 
-      <p>Demo widget:</p>
+      <p>
+        This page loads the widget exactly like a customer website would.
+      </p>
 
-      <Link href="/widget">
-        Open Chat Widget
-      </Link>
+      <WidgetLoader />
     </main>
   );
 }

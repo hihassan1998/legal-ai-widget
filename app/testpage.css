@@ -1,0 +1,36 @@
+.main {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(33, 33, 109);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+h1:hover {
+    color: #ccc;
+    font-weight: 900;
+    font-size: 2.7rem;
+    transition: all 0.5s ease-in-out;
+}
+
+footer {
+    border-top: 2rem solid #fff;
+    padding: 1rem;
+    text-align: center;
+}
