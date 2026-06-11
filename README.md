@@ -52,7 +52,7 @@ The summary and contact details are automatically sent to the law firm.
 Add the widget to any website using a single script:
 ```bash
 <script
-    src="https://your-domain.com/widget.js"
+    src=" https://legal-ai-widget.vercel.app/widget.js"
     data-widget-key="YOUR_WIDGET_KEY">
 </script>
 Note: Get in contact to get your firm's widget key

@@ -6,12 +6,39 @@ export async function POST(req: Request) {
 
   const { conversationId, lead } = await req.json();
 
-  const convo = await Conversation.findById(conversationId);
-
-  if (convo) {
-    convo.lead = lead;
-    await convo.save();
+  if (!conversationId || !lead) {
+    return Response.json(
+      { error: "Missing conversationId or lead" },
+      { status: 400 }
+    );
   }
 
-  return Response.json({ success: true });
+  const convo = await Conversation.findById(conversationId);
+
+  if (!convo) {
+    return Response.json(
+      { error: "Conversation not found" },
+      { status: 404 }
+    );
+  }
+
+  //  Prevent duplicate lead overwrite (important)
+  if (convo.lead?.email || convo.lead?.phone) {
+    return Response.json({
+      success: true,
+      message: "Lead already exists",
+    });
+  }
+
+  convo.lead = {
+    name: lead.name?.trim(),
+    email: lead.email?.trim(),
+    phone: lead.phone?.trim(),
+  };
+
+  await convo.save();
+
+  return Response.json({
+    success: true,
+  });
 }

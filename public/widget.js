@@ -33,8 +33,18 @@
 
   // IFRAME (REact app UI)
   const iframe = document.createElement("iframe");
+  // Developemtn context url
+  const isLocal =
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1" ||
+    window.location.protocol === "file:";
 
-  iframe.src = `http://localhost:3000/widget-frame?key=${widgetKey}`;
+  // Dynamic setting of baseURl
+  const baseUrl = isLocal
+    ? "http://localhost:3000"
+    : "https://legal-ai-widget.vercel.app";
+
+  iframe.src = `${baseUrl}/widget-frame?key=${widgetKey}`;
 
   Object.assign(iframe.style, {
     position: "fixed",

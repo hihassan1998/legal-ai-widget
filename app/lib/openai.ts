@@ -18,5 +18,7 @@ export async function askAI(messages: any[]) {
   // });
 
   // return res.choices[0].message.content;
-  return "This is a demo response from your legal AI system.";
+
+  // return "This is a demo response from your legal AI system.";
+  return "User wants legal help and may need a lawyer"
 }
