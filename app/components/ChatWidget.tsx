@@ -85,8 +85,8 @@ How can I help you today?
       });
 
       const data = await res.json();
-      console.log("AI RESPONSE:", data.response);
-      console.log("TRIGGER CHECK:", triggerLeadForm(data.response));
+      // console.log("AI RESPONSE:", data.response);
+      // console.log("TRIGGER CHECK:", triggerLeadForm(data.response));
 
       if (!data.conversationId) {
         console.error("No conversationId yet");
