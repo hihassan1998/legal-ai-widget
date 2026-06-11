@@ -1,38 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Swedish Legal AI Widget
+## egal-ai-widget
 
-## Getting Started
+The widget can be embedded into existing law firm websites and provides:
 
-First, run the development server:
+1. AI-powered first-line legal guidance
+2. Lead qualification
+3. Conversation summarization
+4. Consultation request collection
+5. Lawyer notification via email
+6. Easy integration through a single script tag
 
+The goal is not to replace lawyers, but to automate the initial intake process and help law firms convert website visitors into consultations.
+## Live demo
+Link available soon
+
+## Features
+AI Legal Assistant
+
+Users can ask legal questions in Swedish through a chat interface.
+
+The AI provides:
+
+General legal information
+Basic guidance
+Clarifying questions
+Recommendations for professional legal review when appropriate
+Lead Capture
+
+When a user wants further assistance, the widget collects:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Name
+Email
+Phone number
+Preferred consultation date
+Preferred consultation time
+AI Conversation Summary
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Before sending the lead, the AI generates a structured summary including:
+```bash
+Legal category
+User's situation
+Key facts
+Suggested discussion topics
+Lawyer Notification
+```
+The summary and contact details are automatically sent to the law firm.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Easy Integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add the widget to any website using a single script:
+```bash
+<script
+    src="https://your-domain.com/widget.js"
+    data-widget-key="YOUR_WIDGET_KEY">
+</script>
+Note: Get in contact to get your firm's widget key
+```
+### Works with:
+WordPress
+Custom PHP websites
+ASP.NET websites
+React applications
+Most CMS platforms and websites
 
-## Learn More
+## Tech Stack
+- NextJs
+- TypeScript
+- Vite
+- css
+- Resend
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# legal-ai-widget
-# legal-ai-widget
+## Application Flow Overview
+![Application Flow Overview](ai-agent-flowjpeg.jpeg)
