@@ -4,15 +4,16 @@
 The widget can be embedded into existing law firm websites and provides:
 
 1. AI-powered first-line legal guidance
-2. Lead qualification
+2. Lead qualification 
 3. Conversation summarization
 4. Consultation request collection
 5. Lawyer notification via email
 6. Easy integration through a single script tag
 
 The goal is not to replace lawyers, but to automate the initial intake process and help law firms convert website visitors into consultations.
-## Live demo
-Link available soon
+
+## Live demo and testing widget script
+https://legal-ai-widget.vercel.app/
 
 ## Features
 AI Legal Assistant
@@ -70,6 +71,14 @@ Most CMS platforms and websites
 - Vite
 - css
 - Resend
+
+## Cleint Website Features
+
+- Language Switcher react I10n integration
+- Sliding Banner for attraction
+- Demo widget
+- Link to Linkedin 
+- Resend Emailing service integration (Coming SOon)
 
 ## Application Flow Overview
 ![Application Flow Overview](ai-agent-flowjpeg.jpeg)

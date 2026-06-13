@@ -10,7 +10,7 @@
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
     font-weight: 700;
@@ -18,19 +18,10 @@ h1 {
     color: #fff;
 }
 
-p{
-    color: #fff;
-}
 
 h1:hover {
     color: #ccc;
     font-weight: 900;
-    font-size: 2.7rem;
+    font-size: 2.1rem;
     transition: all 0.5s ease-in-out;
-}
-
-footer {
-    border-top: 2rem solid #fff;
-    padding: 1rem;
-    text-align: center;
 }
