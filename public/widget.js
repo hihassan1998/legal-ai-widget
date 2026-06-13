@@ -36,8 +36,7 @@
   // Developemtn context url
   const isLocal =
     window.location.hostname === "localhost" ||
-    window.location.hostname === "127.0.0.1" ||
-    window.location.protocol === "file:";
+    window.location.hostname === "127.0.0.1";
 
   // Dynamic setting of baseURl
   const baseUrl = isLocal

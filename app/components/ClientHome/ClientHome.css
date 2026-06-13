@@ -1,0 +1,115 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+
+.section {
+    padding: 60px;
+    text-align: center;
+    color: #fff;
+    /* transform: scale(1.5); */
+    /* transition: 0.2s ease; */
+}
+
+.container-1-col {
+    margin: 0;
+    color: #fff;
+    padding: 20px;
+    height: 50vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(54, 54, 131);
+    color: #fff;
+    /* border: 2px solid #111827; */
+    border: 2px solid #476196;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid #413ca7;
+    background-color: rgb(54, 54, 131);
+    margin-top: 25px;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.box {
+    background: #324775;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+}
+
+.css-banner {
+    width: 100%;
+    background: linear-gradient(90deg, #12121200, #4d4d4d17);
+    overflow: hidden;
+    padding: 15px 0;
+    white-space: nowrap;
+}
+
+.banner-text {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    animation: slideBanner 10s linear infinite;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .banner-text {
+        display: inline-block;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        animation: slideBanner 5s linear infinite;
+    }
+}
+
+@keyframes slideBanner {
+    0% {
+        transform: translate(100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
